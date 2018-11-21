@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Card from "./Card";
 
 class App extends Component {
   state = {
@@ -22,11 +23,18 @@ class App extends Component {
       console.log(this.state.data[index].flight_number)
     );
     return (
-      <div className="App">
-        <h1>Nuno Gervasio</h1>
-        {this.state.data.map((element, index) => (
-          <div> {this.state.data[index].flight_number} </div>
-        ))}
+      <div className="wrapper">
+        <div className="container clearfix">
+          <h1>SpaceX-API</h1>
+          {this.state.data.map((element, index) => (
+            <Card
+              key={index}
+              number={element.flight_number}
+              name={element.mission_name}
+              year={element.launch_year}
+            />
+          ))}
+        </div>
       </div>
     );
   }

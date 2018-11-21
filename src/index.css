@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +15,48 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+h1 {
+  text-align: center;
+}
+.card {
+  /* display: block; */
+  border: solid 1px black;
+}
+.margins {
+  padding: 3em 0;
+  border: solid 1px black;
+  display: grid;
+}
+.margins p {
+  margin: auto;
+}
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .margins {
+    /* display: grid; */
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+    width: 60%;
+    max-width: 1150px;
+  }
 }
