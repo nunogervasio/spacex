@@ -1,38 +1,17 @@
 import React from "react";
 
-const Card = props => {
+const Row = props => {
   return (
-    // <div className="card">
-    <div className="margins">
-      <table>
-        <col width="30%" />
-        <col width="70%" />
-        <tr>
-          <td>Flight Number: </td>
-          <td>{props.number}</td>
-        </tr>
-        <tr>
-          <td>Flight Name: </td>
-          <td>{props.name}</td>
-        </tr>
-        <tr>
-          <td>Flight Year: </td>
-          <td>{props.year}</td>
-        </tr>
-      </table>
-    </div>
-    // </div>
+    <tr>
+      <img src={props.patch_url} className="patch" alt="mission patch" />
+      <td>{props.number}</td>
+      <td>{props.name}</td>
+      {/* <td>{props.year}</td> */}
+      <td>{props.date}</td>
+      <td>{props.site}</td>
+      <td>{props.details}</td>
+    </tr>
   );
 };
 
-export default Card;
-
-{
-  /* <div className="margins">
-    <table>
-      <p>Flight Number: {props.number}</p>
-      <p>Flight Name: {props.name}</p>
-      <p>Flight Year: {props.year}</p>
-      </table>
-    </div> */
-}
+export default Row;

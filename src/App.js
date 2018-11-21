@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "./Card";
+import Row from "./Card";
 
 class App extends Component {
   state = {
@@ -24,16 +24,33 @@ class App extends Component {
     );
     return (
       <div className="wrapper">
-        <div className="container clearfix">
-          <h1>SpaceX-API</h1>
-          {this.state.data.map((element, index) => (
-            <Card
-              key={index}
-              number={element.flight_number}
-              name={element.mission_name}
-              year={element.launch_year}
-            />
-          ))}
+        <h1>SpaceX-API</h1>
+        <div className="container">
+          <table>
+            <tbody>
+              <tr>
+                <th>Mission Patch</th>
+                <th>Flight Number</th>
+                <th>Flight Name</th>
+                {/* <th>Launch Year</th> */}
+                <th>Launch Year/Date/Time</th>
+                <th>Launch Site</th>
+                <th>Details</th>
+              </tr>
+              {this.state.data.map((element, index) => (
+                <Row
+                  key={index}
+                  patch_url={element.links.mission_patch_small}
+                  number={element.flight_number}
+                  name={element.mission_name}
+                  year={element.launch_year}
+                  date={element.launch_date_local}
+                  site={element.launch_site.site_name}
+                  details={element.details}
+                />
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     );

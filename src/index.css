@@ -20,47 +20,41 @@ h1 {
   text-align: center;
 }
 table {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
 }
-.card {
-  /* display: block; */
-  border: solid 1px black;
+table,
+th,
+td {
+  border: solid black 1px;
 }
-.margins {
-  padding: 1.5em 0;
-  border: solid 1px black;
-  display: grid;
+th,
+td {
+  padding: 15px;
 }
-.margins p {
-  margin: auto;
+th {
+  text-align: left;
 }
-/* ---- Float clearfix ---- */
-
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
+img {
+  /* max-height: 70px; */
 }
+/* ================================= 
+  Classes
+==================================== */
+/* .patch {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+} */
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
   .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-  }
-
-  .margins {
-    /* display: grid; */
-    width: 50%;
-    float: left;
   }
 }
 @media (min-width: 1025px) {
-  .container {
-    width: 80%;
-    max-width: 1150px;
-  }
 }
