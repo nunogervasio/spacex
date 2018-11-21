@@ -19,12 +19,16 @@ code {
 h1 {
   text-align: center;
 }
+table {
+  width: 90%;
+  margin: 0 auto;
+}
 .card {
   /* display: block; */
   border: solid 1px black;
 }
 .margins {
-  padding: 3em 0;
+  padding: 1.5em 0;
   border: solid 1px black;
   display: grid;
 }
@@ -44,7 +48,7 @@ h1 {
 
 @media (min-width: 769px) {
   .container {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -56,7 +60,7 @@ h1 {
 }
 @media (min-width: 1025px) {
   .container {
-    width: 60%;
+    width: 80%;
     max-width: 1150px;
   }
 }
