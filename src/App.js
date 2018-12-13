@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Row from "./Card";
+import Header from "./Header";
+import Footer from "./Footer";
 
 class App extends Component {
   state = {
@@ -24,7 +26,8 @@ class App extends Component {
     );
     return (
       <div className="wrapper">
-        <h1>SpaceX-API</h1>
+        {/* <h1>SpaceX-API</h1> */}
+        <Header />
         <div className="container">
           {this.state.data.map((element, index) => (
             <Row
@@ -39,6 +42,7 @@ class App extends Component {
             />
           ))}
         </div>
+        <Footer />
       </div>
     );
   }
