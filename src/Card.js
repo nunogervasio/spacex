@@ -2,7 +2,7 @@ import React from "react";
 
 const Row = props => {
   return (
-    <div className="main-card clearfix">
+    <div className="main-card">
       <div className="card-img ">
         <img src={props.patch_url} className="patch" alt="mission patch" />
         <span className="flight-no">{props.number}</span>

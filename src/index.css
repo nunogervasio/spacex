@@ -1,3 +1,10 @@
+/* ================================= 
+  Base Element Styles
+
+  Following a mobile first approach write properties
+  as base styles outside of any media query.
+  Then they apply to all screen sizes and devices.
+==================================== */
 * {
   box-sizing: border-box;
 }
@@ -8,8 +15,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #000;
 }
 
 code {
@@ -19,55 +25,122 @@ code {
 h1 {
   text-align: center;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 p {
   line-height: 1.5;
 }
+a {
+  text-decoration: none;
+}
+img {
+  /* max-height: 12em; */
+}
 /* ================================= 
-  Classes
+  Base Layout Styles
+
+  Following a mobile first approach write properties
+  as base styles outside of any media query.
+  Then they apply to all screen sizes and devices.
 ==================================== */
+
+/* ---- Navigation ---- */
+.name {
+  font-size: 2em;
+  margin: 0;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 5px 15px;
+}
+.main-nav a:hover {
+  color: cornflowerblue;
+}
+.main-nav a:visited {
+  /* color: red; */
+}
+/* ---- Layout Containers ---- */
+.main-header {
+  background: #d9e4ea;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.main-card {
+  border: solid black 2px;
+  padding-top: 16px;
+  margin: 0.3em;
+  /* min-height: 250px; */
+  width: 370px;
+  height: 445px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .card-img,
 .card-details {
   display: block;
   text-align: center;
 }
-/* .card-img {
-  background-color: lightgray;
-} */
+.card-details {
+  padding: 0 0.3em;
+}
 .flight-no {
   font-size: 4em;
 }
 .flight-name {
-  font-size: 3em;
+  font-size: 2em;
   vertical-align: baseline;
+  line-height: 50%;
 }
-/* ---- Float clearfix ---- */
-
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
+.main-footer {
+  text-align: center;
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px;
 }
 /* ================================= 
   Media Queries
 ==================================== */
-
-@media (min-width: 769px) {
+@media (min-width: 576px) {
   .container {
-    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
     margin: 0 auto;
   }
-  .card-img,
-  .card-details {
-    float: left;
-    /* width: 50%; */
+  .main-header,
+  .main-nav {
+    display: flex;
   }
-  .card-img {
-    width: 40%;
+  .main-header {
+    flex-direction: column;
+    align-items: center;
   }
-  .card-details {
-    width: 60%;
-    text-align: left;
+}
+
+@media (min-width: 769px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container {
+    /* width: 80%;
+    margin: 0 auto; */
   }
 }
 @media (min-width: 1025px) {
+}
+
+@media (min-width: 1200px) {
 }
