@@ -1,6 +1,6 @@
 import React from "react";
 
-const Row = props => {
+const Card = props => {
   return (
     <div className="main-card">
       <div className="card-img ">
@@ -27,4 +27,4 @@ const Row = props => {
   );
 };
 
-export default Row;
+export default Card;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Row from "./Card";
+import Card from "./Card";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -20,17 +20,23 @@ class App extends Component {
         console.log("Error fetching and parsing data...", error);
       });
   }
+
   render() {
-    this.state.data.map((element, index) =>
-      console.log(this.state.data[index].flight_number)
-    );
+    // this.state.data.map((element, index) =>
+    //   console.log(this.state.data[index].upcoming)
+    // );
+
+    let filteredData = this.state.data.filter(d => {
+      return d.upcoming == false;
+    });
+
     return (
       <div className="wrapper">
-        {/* <h1>SpaceX-API</h1> */}
         <Header />
         <div className="container">
-          {this.state.data.map((element, index) => (
-            <Row
+          {/* {this.state.data.map((element, index) => ( */}
+          {filteredData.map((element, index) => (
+            <Card
               key={index}
               patch_url={element.links.mission_patch_small}
               number={element.flight_number}
