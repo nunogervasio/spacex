@@ -1,13 +1,14 @@
 {
-  "main.css": "/spacex/static/css/main.8d7bd05c.chunk.css",
-  "main.js": "/spacex/static/js/main.94bcd6c8.chunk.js",
-  "main.js.map": "/spacex/static/js/main.94bcd6c8.chunk.js.map",
-  "static/js/1.f68dcc1a.chunk.js": "/spacex/static/js/1.f68dcc1a.chunk.js",
-  "static/js/1.f68dcc1a.chunk.js.map": "/spacex/static/js/1.f68dcc1a.chunk.js.map",
+  "main.css": "/spacex/static/css/main.cdd1f940.chunk.css",
+  "main.js": "/spacex/static/js/main.f1f3a337.chunk.js",
+  "main.js.map": "/spacex/static/js/main.f1f3a337.chunk.js.map",
+  "static/js/1.2dd891c4.chunk.js": "/spacex/static/js/1.2dd891c4.chunk.js",
+  "static/js/1.2dd891c4.chunk.js.map": "/spacex/static/js/1.2dd891c4.chunk.js.map",
   "runtime~main.js": "/spacex/static/js/runtime~main.83493456.js",
   "runtime~main.js.map": "/spacex/static/js/runtime~main.83493456.js.map",
-  "static/css/main.8d7bd05c.chunk.css.map": "/spacex/static/css/main.8d7bd05c.chunk.css.map",
+  "static/media/mars-rover.svg": "/spacex/static/media/mars-rover.d0300d2b.svg",
+  "static/css/main.cdd1f940.chunk.css.map": "/spacex/static/css/main.cdd1f940.chunk.css.map",
   "index.html": "/spacex/index.html",
-  "precache-manifest.4272172556cce0de17990821e3cb07c0.js": "/spacex/precache-manifest.4272172556cce0de17990821e3cb07c0.js",
+  "precache-manifest.18d8465c41a253206dcf13615c1ee41a.js": "/spacex/precache-manifest.18d8465c41a253206dcf13615c1ee41a.js",
   "service-worker.js": "/spacex/service-worker.js"
 }
