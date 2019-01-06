@@ -1,27 +1,11 @@
 import React from "react";
+import rover from "./mars-rover.svg";
 
 const Header = props => {
   return (
     <header className="main-header">
-      <h1 className="name">
-        <a href="#">SpaceX API</a>
-      </h1>
-      <ul className="main-nav">
-        <li>
-          <a href="https://www.spacex.com/">SpaceX.com</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA">
-            YouTube
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/spacex">Twitter</a>
-        </li>
-        <li>
-          <a href="https://en.wikipedia.org/wiki/SpaceX">Wiki</a>
-        </li>
-      </ul>
+      <h1 className="name">SpaceX - API</h1>
+      <img src={rover} alt="mars rover" className="main-header-img" />
     </header>
   );
 };

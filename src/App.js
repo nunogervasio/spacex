@@ -27,7 +27,7 @@ class App extends Component {
     // );
 
     let filteredData = this.state.data.filter(d => {
-      return d.upcoming == false;
+      return d.upcoming === false;
     });
 
     return (

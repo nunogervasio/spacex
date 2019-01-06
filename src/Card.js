@@ -15,9 +15,9 @@ const Card = props => {
           <span className="flight-name">{props.name}</span>
           {/* {props.year} */}
           <br />
-          Date/Time: {props.date}
+          <span className="card-date-time">Date/Time:</span> {props.date}
           <br />
-          Location: {props.site}
+          <span className="card-location">Location:</span> {props.site}
           {/* <br /> */}
           {/* Details: {props.details} */}
         </p>
