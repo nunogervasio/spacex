@@ -41,4 +41,7 @@ describe("Component: App", () => {
     expect(App.prototype.componentDidMount).to.have.property("callCount", 1);
     App.prototype.componentDidMount.restore();
   });
+  it.skip("should add leading zero to numbers under 10", () => {
+    expect(addLeadingZero(9).to.equal(9));
+  });
 });

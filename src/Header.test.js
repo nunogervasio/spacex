@@ -11,7 +11,6 @@ describe("Component: Header", () => {
     const wrapper = shallow(<Header />);
     expect(wrapper.find(".main-header")).to.have.lengthOf(1);
     expect(wrapper.find(".name")).to.have.lengthOf(1);
-    expect(wrapper.find(".main-nav")).to.have.lengthOf(1);
   });
   it.skip("renders 4 <a /> components", () => {});
 });

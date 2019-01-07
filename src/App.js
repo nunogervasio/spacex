@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Card from "./Card";
 import Header from "./Header";
 import Footer from "./Footer";
+import utils from "./utils";
 
 class App extends Component {
   state = {
@@ -21,11 +22,18 @@ class App extends Component {
       });
   }
 
-  render() {
-    // this.state.data.map((element, index) =>
-    //   console.log(this.state.data[index].upcoming)
-    // );
+  // formatDate = date => {
+  //   return date.slice(0, 9);
+  // };
 
+  // addLeadingZero = number => {
+  //   // if (number < 10) {
+  //   //   return 0 + number;
+  //   // }
+  //   return number;
+  // };
+
+  render() {
     let filteredData = this.state.data.filter(d => {
       return d.upcoming === false;
     });
@@ -39,10 +47,10 @@ class App extends Component {
             <Card
               key={index}
               patch_url={element.links.mission_patch_small}
-              number={element.flight_number}
+              number={utils.addLeadingZero(element.flight_number)}
               name={element.mission_name}
               year={element.launch_year}
-              date={element.launch_date_local}
+              date={utils.formatDate(element.launch_date_local)}
               site={element.launch_site.site_name_long}
               details={element.details}
             />
