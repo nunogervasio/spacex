@@ -1,6 +1,7 @@
 import React from "react";
 
 const Card = props => {
+  console.log(props.core_serial.core_serial);
   return (
     <div className="main-card">
       <div className="card-img ">

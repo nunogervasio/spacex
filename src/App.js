@@ -22,17 +22,6 @@ class App extends Component {
       });
   }
 
-  // formatDate = date => {
-  //   return date.slice(0, 9);
-  // };
-
-  // addLeadingZero = number => {
-  //   // if (number < 10) {
-  //   //   return 0 + number;
-  //   // }
-  //   return number;
-  // };
-
   render() {
     let filteredData = this.state.data.filter(d => {
       return d.upcoming === false;
@@ -53,6 +42,7 @@ class App extends Component {
               date={utils.formatDate(element.launch_date_local)}
               site={element.launch_site.site_name_long}
               details={element.details}
+              core_serial={element.rocket.first_stage.cores[0]}
             />
           ))}
         </div>
