@@ -1,5 +1,5 @@
 import React from "react";
-import rover from "./mars-rover.svg";
+import rover from "../mars-rover.svg";
 
 const Header = props => {
   return (

@@ -1,55 +1,25 @@
-import React, { Component } from "react";
-import Card from "./Card";
-import Header from "./Header";
-import Footer from "./Footer";
-import utils from "./utils";
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./Home";
+import NotFound from "./components/NotFound";
+import Mission from "./components/Mission";
 
-class App extends Component {
-  state = {
-    data: []
-  };
-
-  componentDidMount() {
-    fetch("https://api.spacexdata.com/v3/launches")
-      .then(responce => responce.json())
-      .then(responceData =>
-        this.setState({
-          data: responceData
-        })
-      )
-      .catch(error => {
-        console.log("Error fetching and parsing data...", error);
-      });
-  }
-
-  render() {
-    let filteredData = this.state.data.filter(d => {
-      return d.upcoming === false;
-    });
-
-    return (
+const App = () => {
+  return (
+    <BrowserRouter>
       <div className="wrapper">
         <Header />
-        <div className="container">
-          {/* {this.state.data.map((element, index) => ( */}
-          {filteredData.map((element, index) => (
-            <Card
-              key={index}
-              patch_url={element.links.mission_patch_small}
-              number={utils.addLeadingZero(element.flight_number)}
-              name={element.mission_name}
-              year={element.launch_year}
-              date={utils.formatDate(element.launch_date_local)}
-              site={element.launch_site.site_name_long}
-              details={element.details}
-              core_serial={element.rocket.first_stage.cores[0]}
-            />
-          ))}
-        </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/mission/:name" component={Mission} />
+          <Route component={NotFound} />
+        </Switch>
         <Footer />
       </div>
-    );
-  }
-}
+    </BrowserRouter>
+  );
+};
 
 export default App;
