@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = props => {
-  console.log(props.core_serial.core_serial);
+  // console.log(props.core_serial.core_serial);
   return (
     <Link to={`/mission/${props.name}`}>
       <div className="main-card">
