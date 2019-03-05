@@ -1,11 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import rover from "../mars-rover.svg";
 
 const Header = props => {
   return (
     <header className="main-header">
-      <h1 className="name">SpaceX - API</h1>
-      <img src={rover} alt="mars rover" className="main-header-img" />
+      <Link to="/">
+        {/* <a href="#"> */}
+        <h1 className="name">SpaceX - API</h1>
+        {/****** TODO: line up img next to header */}
+        {/* <img src={rover} alt="mars rover" className="main-header-img" /> */}
+        {/* </a> */}
+      </Link>
     </header>
   );
 };

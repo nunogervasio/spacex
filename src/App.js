@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./Home";
 import NotFound from "./components/NotFound";
 import Mission from "./Mission";
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -27,21 +28,23 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="wrapper">
-          <Header />
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={() => <Home data={this.state.data} />}
-            />
-            <Route
-              path="/mission/:name"
-              // Ref. below
-              render={props => <Mission {...props} data={this.state.data} />}
-            />
-            <Route component={NotFound} />
-          </Switch>
+        <div className="site-wrapper">
+          <div className="content-wrapper">
+            <Header />
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={() => <Home data={this.state.data} />}
+              />
+              <Route
+                path="/mission/:name"
+                // Ref. for {...props} below
+                render={props => <Mission {...props} data={this.state.data} />}
+              />
+              <Route component={NotFound} />
+            </Switch>
+          </div>
           <Footer />
         </div>
       </BrowserRouter>

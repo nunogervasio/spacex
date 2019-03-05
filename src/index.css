@@ -8,6 +8,10 @@
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -23,7 +27,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-h1 {
+h1,
+h2,
+h3 {
   text-align: center;
   font-family: "Staatliches", cursive;
 }
@@ -38,8 +44,9 @@ p {
 a {
   text-decoration: none;
 }
-img {
-  /* max-height: 12em; */
+.space-font {
+  text-align: center;
+  font-family: "Staatliches", cursive;
 }
 /* ================================= 
   Base Layout Styles
@@ -61,7 +68,31 @@ img {
   text-align: center;
   padding: 5px 15px;
 } */
+
+/* unvisited link */
+a {
+  color: black;
+}
+/* visited link */
+a:visited {
+  /* color: #00ff00; */
+  color: black;
+}
+/* mouse over link */
+a:hover {
+  /* background-color: rgb(78, 76, 76); */
+  color: black;
+  /* border-bottom-color: #5b7484; */
+}
+/* selected link */
+a:active {
+  /* color: rgb(61, 60, 60); */
+}
 /* ---- Layout Containers ---- */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .main-header {
   /* background: #d9e4ea; */
   padding-top: 0.5em;
@@ -81,7 +112,10 @@ img {
   margin: 0.3em;
   /* min-height: 250px; */
   width: 370px;
-  height: 445px;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .container {
   display: flex;
@@ -116,25 +150,70 @@ img {
 }
 /* Card Details */
 .main-card-details {
-  border: solid black 2px;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
   padding-top: 16px;
   margin: 0.3em;
-  width: 740px;
-  height: 445px;
+  /* width: 740px; */
+  /* height: 445px; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .card-img-details {
   display: flex;
   flex-direction: row;
-  /* text-align: center; */
+  justify-content: center;
 }
 img {
   align-self: center;
 }
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.card-details-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1em;
+}
+.card-location img {
+  max-height: 25px;
+}
+.links .card-location a {
+  /* border: red solid 1px; */
+}
+
+.links .card-location a img {
+  /* border: pink solid 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+}
+.links .card-location a span {
+  /* border: red solid 1px; */
+}
+/* .youtube::before {
+  content: url(./youtube.svg);
+}
+.wiki::before {
+  content: url(./wikipedia-logo.svg);
+} */
 /* .card-img-details .card-img-details img {
   height: 100%;
 } */
+.monster {
+  max-width: 15em;
+}
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* ================================= 
   Media Queries
 ==================================== */
@@ -163,10 +242,14 @@ img {
   .main-header {
     flex-direction: row;
     /* justify-content: center; */
+    align-items: center;
   }
   .container {
     /* width: 80%;
     margin: 0 auto; */
+  }
+  .main-card-details {
+    flex-direction: row;
   }
 }
 @media (min-width: 1025px) {
