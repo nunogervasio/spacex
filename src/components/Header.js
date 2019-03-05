@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import rover from "../mars-rover.svg";
+import rover from "../img/mars-rover.svg";
 
-const Header = props => {
+const Header = () => {
   return (
     <header className="main-header">
       <Link to="/">

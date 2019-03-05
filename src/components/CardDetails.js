@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import youtube from "../youtube.svg";
-import wiki from "../wikipedia-logo.svg";
+import PropTypes from "prop-types";
+import youtube from "../img/youtube.svg";
+import wiki from "../img/wikipedia-logo.svg";
 const CardDetails = props => {
-  // console.log(props.core_serial.core_serial);
   return (
     <div className="main-card-details">
       <div className="card-img-details">
@@ -12,7 +11,6 @@ const CardDetails = props => {
 
       <div className="card-details-details">
         <p>
-          {/* Flight Name: {props.name} */}
           <span className="flight-name">{props.name}</span>
           <br />
           <span className="card-location">Flight Number: </span>
@@ -54,3 +52,17 @@ const CardDetails = props => {
 };
 
 export default CardDetails;
+
+CardDetails.propTypes = {
+  key: PropTypes.number.isRequired,
+  patch_url: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  site: PropTypes.string.isRequired,
+  rocketName: PropTypes.string.isRequired,
+  rockeType: PropTypes.string.isRequired,
+  details: PropTypes.string.isRequired,
+  youtube: PropTypes.string.isRequired,
+  wiki: PropTypes.string.isRequired
+};

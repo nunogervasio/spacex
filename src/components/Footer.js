@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = props => {
+const Footer = () => {
   return (
     <footer className="main-footer">
       <span>&copy;2019 Unofficial SpaceX Website</span>

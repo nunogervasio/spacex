@@ -1,5 +1,5 @@
 import React from "react";
-import monster from "../alien-with-aqualung.svg";
+import monster from "../img/alien-with-aqualung.svg";
 const NotFound = () => {
   return (
     <div className="not-found">

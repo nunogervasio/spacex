@@ -22,7 +22,6 @@ const Mission = props => {
         rocketName={element.rocket.rocket_name}
         rocketType={element.rocket.rocket_type}
         details={element.details}
-        core_serial={element.rocket.first_stage.cores[0]}
         youtube={element.links.video_link}
         wiki={element.links.wikipedia}
       />

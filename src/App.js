@@ -42,7 +42,8 @@ class App extends Component {
                 // Ref. for {...props} below
                 render={props => <Mission {...props} data={this.state.data} />}
               />
-              <Route component={NotFound} />
+              <Route path="*" exact={true} component={NotFound} />
+              {/* <Route path="*" exact={true} component={NotFound} /> */}
             </Switch>
           </div>
           <Footer />
