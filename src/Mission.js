@@ -1,15 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
 import CardDetails from "./components/CardDetails";
 import utils from "./utils";
 
-const Mission = props => {
-  let name = props.match.params.name;
+const Mission = ({ data, match }) => {
+  // let name = propps.match.params.name;
+  let name = match.params.name;
 
   //TODO: function that filters out the '/' character of the url path
 
-  let selectedMission = props.data.filter(d => {
+  let selectedMission = data.filter(d => {
     return d.mission_name === name;
   });
+
   let cards = selectedMission.map((element, index) => {
     return (
       <CardDetails
@@ -27,7 +30,13 @@ const Mission = props => {
       />
     );
   });
+
   return <div className="container">{cards}</div>;
 };
 
 export default Mission;
+
+Mission.propTypes = {
+  data: PropTypes.array.isRequired,
+  match: PropTypes.object.isRequired
+};

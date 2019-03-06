@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Card from "./components/Card";
 import utils from "./utils";
 
-const Home = props => {
-  let filteredData = props.data.filter(d => {
+const Home = ({ data }) => {
+  let filteredData = data.filter(d => {
     return d.upcoming === false;
   });
 
@@ -19,7 +20,12 @@ const Home = props => {
       />
     );
   });
+
   return <div className="container">{cards}</div>;
 };
 
 export default Home;
+
+Home.propTypes = {
+  data: PropTypes.array.isRequired
+};

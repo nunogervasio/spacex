@@ -3,8 +3,12 @@ function formatDate(date) {
 }
 
 function addLeadingZero(number) {
-  return number > 9 ? number : "0" + number;
+  return number > 9 ? number : parseInt(`0${number}`);
 }
+
+// function addLeadingZero(number) {
+//   return number > 9 ? number : "0" + number;
+// }
 
 // export default formatDate;
 module.exports.formatDate = formatDate;

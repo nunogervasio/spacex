@@ -14,4 +14,6 @@ describe("testing utilities Functions", () => {
      */
     expect(utils.addLeadingZero("9")).to.equal("09");
   });
+  it("should return a number type");
+  // TODO: test checking that number is returned from addLeadingZero()
 });

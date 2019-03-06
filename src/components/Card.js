@@ -2,21 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const Card = props => {
+const Card = ({ patch_url, number, name, date, site }) => {
+  // TODO: function that filters out the '/' character of the url path ${name}
+
   return (
-    <Link to={`/mission/${props.name}`}>
+    <Link to={`/mission/${name}`}>
       <div className="main-card">
         <div className="card-img ">
-          <img src={props.patch_url} className="patch" alt="mission patch" />
-          <span className="flight-no ">{props.number}</span>
+          <img src={patch_url} className="patch" alt="mission patch" />
+          <span className="flight-no ">{number}</span>
         </div>
         <div className="card-details">
           <p>
-            <span className="flight-name ">{props.name}</span>
+            <span className="flight-name ">{name}</span>
             <br />
-            <span className="card-date-time">Date:</span> {props.date}
+            <span className="card-date-time">Date:</span> {date}
             <br />
-            <span className="card-location">Location:</span> {props.site}
+            <span className="card-location">Location:</span> {site}
           </p>
         </div>
       </div>
@@ -27,7 +29,6 @@ const Card = props => {
 export default Card;
 
 Card.propTypes = {
-  key: PropTypes.number.isRequired,
   patch_url: PropTypes.string.isRequired,
   number: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
