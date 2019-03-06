@@ -25,8 +25,8 @@ const Mission = ({ data, match }) => {
         rocketName={element.rocket.rocket_name}
         rocketType={element.rocket.rocket_type}
         details={element.details}
-        youtube={element.links.video_link}
-        wiki={element.links.wikipedia}
+        youtube_url={element.links.video_link}
+        wiki_url={element.links.wikipedia}
       />
     );
   });

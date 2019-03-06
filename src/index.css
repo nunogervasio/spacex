@@ -44,6 +44,9 @@ p {
 a {
   text-decoration: none;
 }
+h1 {
+  margin: 0;
+}
 .space-font {
   text-align: center;
   font-family: "Staatliches", cursive;
@@ -59,8 +62,9 @@ a {
 /* ---- Navigation ---- */
 .name {
   font-size: 4em;
-  margin: 0;
+  /* margin: 0; */
   color: black;
+  /* display: inline; */
 }
 
 /* .name a {
@@ -97,14 +101,14 @@ a:active {
   /* background: #d9e4ea; */
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
 }
 .main-header-img {
   max-width: 100px;
-  /* margin: auto; */
-  align-self: center;
+  /* align-self: center; */
+  text-align: center;
 }
 .main-card {
   border: solid black 2px;
@@ -164,9 +168,7 @@ a:active {
   flex-direction: row;
   justify-content: center;
 }
-img {
-  align-self: center;
-}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -180,32 +182,29 @@ img {
   justify-content: space-between;
   margin-left: 1em;
 }
+
 .card-location img {
-  max-height: 25px;
+  max-height: 20px;
+  max-width: 20px;
 }
-.links .card-location a {
-  /* border: red solid 1px; */
+/* Clearfix (clear floats) */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/****** floated columns */
+.youtube,
+.wiki {
+  float: right;
+  margin-left: 5px;
 }
 
-.links .card-location a img {
-  /* border: pink solid 1px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; */
+.float-left {
+  width: 25%;
+  float: left;
 }
-.links .card-location a span {
-  /* border: red solid 1px; */
-}
-/* .youtube::before {
-  content: url(./youtube.svg);
-}
-.wiki::before {
-  content: url(./wikipedia-logo.svg);
-} */
-/* .card-img-details .card-img-details img {
-  height: 100%;
-} */
+
 .monster {
   max-width: 15em;
 }
@@ -225,14 +224,7 @@ img {
     width: 90%;
     margin: 0 auto;
   }
-  .main-header,
-  .main-nav {
-    display: flex;
-  }
-  .main-header {
-    flex-direction: column;
-    /* align-items: center; */
-  }
+
   .name {
     font-size: 6em;
   }
@@ -240,16 +232,20 @@ img {
 
 @media (min-width: 769px) {
   .main-header {
-    flex-direction: row;
-    /* justify-content: center; */
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .container {
-    /* width: 80%;
-    margin: 0 auto; */
+  .flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .main-card-details {
     flex-direction: row;
+  }
+  .card-img-details {
+    align-self: center;
   }
 }
 @media (min-width: 1025px) {

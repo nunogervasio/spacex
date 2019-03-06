@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import youtube from "../img/youtube.svg";
-import wiki from "../img/wikipedia-logo.svg";
+import youtubeImg from "../img/youtube-1.svg";
+import wikiImg from "../img/wiki-1.svg";
 const CardDetails = ({
   patch_url,
   number,
@@ -11,8 +11,8 @@ const CardDetails = ({
   rocketName,
   rocketType,
   details,
-  youtube,
-  wiki
+  youtube_url,
+  wiki_url
 }) => {
   return (
     <div className="main-card-details">
@@ -41,17 +41,15 @@ const CardDetails = ({
         </p>
 
         <div className="links">
-          <div className="card-location">
-            <a href={youtube} target="_blank" rel="noopener noreferrer">
-              {/****** TODO: line up img next to text 'youtube video' */}
-              {/* <img src={youtube} /> */}
+          <div className="card-location clearfix">
+            <a href={youtube_url} target="_blank" rel="noopener noreferrer">
+              <img src={youtubeImg} className="float-left" />
               <span className="youtube">YouTube Video</span>
             </a>
           </div>
-          <div className="card-location">
-            <a href={wiki} target="_blank" rel="noopener noreferrer">
-              {/****** TODO: line up img next to text 'wikipedia page' */}
-              {/* <img src={wiki} /> */}
+          <div className="card-location clearfix">
+            <a href={wiki_url} target="_blank" rel="noopener noreferrer">
+              <img src={wikiImg} className="float-left" />
               <span className="wiki">Wikipedia Page</span>
             </a>
           </div>
@@ -72,6 +70,6 @@ CardDetails.propTypes = {
   rocketName: PropTypes.string.isRequired,
   rocketType: PropTypes.string.isRequired,
   details: PropTypes.string.isRequired,
-  youtube: PropTypes.string.isRequired,
-  wiki: PropTypes.string.isRequired
+  youtube_url: PropTypes.string.isRequired,
+  wiki_url: PropTypes.string.isRequired
 };
