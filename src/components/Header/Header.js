@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import roverImg from "../img/mars-rover.svg";
+import roverImg from "../../img/mars-rover.svg";
+import "./Header.css";
 
 const Header = () => {
   return (

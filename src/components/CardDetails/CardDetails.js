@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import youtubeImg from "../img/youtube-1.svg";
-import wikiImg from "../img/wiki-1.svg";
+import youtubeImg from "../../img/youtube-1.svg";
+import wikiImg from "../../img/wiki-1.svg";
+import "./CardDetails.css";
+
 const CardDetails = ({
   patch_url,
   number,
@@ -34,8 +36,6 @@ const CardDetails = ({
           <br />
           <span className="card-location">Rocket Type:</span> {rocketType}
           <br />
-          {/****** TODO: return "no details available" when there are no details 
-          this also call a proptype error when details returns null*/}
           <span className="card-location">Mission Details: </span> {details}
           <br />
         </p>
