@@ -43,13 +43,13 @@ const CardDetails = ({
         <div className="links">
           <div className="card-location clearfix">
             <a href={youtube_url} target="_blank" rel="noopener noreferrer">
-              <img src={youtubeImg} className="float-left" />
+              <img src={youtubeImg} alt="youtube icon" className="float-left" />
               <span className="youtube">YouTube Video</span>
             </a>
           </div>
           <div className="card-location clearfix">
             <a href={wiki_url} target="_blank" rel="noopener noreferrer">
-              <img src={wikiImg} className="float-left" />
+              <img src={wikiImg} alt="wiki icon" className="float-left" />
               <span className="wiki">Wikipedia Page</span>
             </a>
           </div>

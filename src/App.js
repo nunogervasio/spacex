@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./Home";
 import NotFound from "./components/NotFound";
 import Mission from "./Mission";
+import SiteDesc from "./components/SiteDesc";
 import "./App.css";
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
         <div className="site-wrapper">
           <div className="content-wrapper">
             <Header />
+            <SiteDesc />
             <Switch>
               <Route
                 exact

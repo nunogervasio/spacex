@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const Card = ({ patch_url, number, name, date, site }) => {
-  // TODO: function that filters out the '/' character of the url path ${name}
-
   return (
     <Link to={`/mission/${name}`}>
       <div className="main-card">
