@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./Home";
-import NotFound from "./components/NotFound";
-import Mission from "./Mission";
-import SiteDesc from "./components/SiteDesc";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Home from "./Home/Home";
+import NotFound from "./components/NotFound/NotFound";
+import Mission from "./Mission/Mission";
+import SiteDesc from "./components/SiteDesc/SiteDesc";
 import "./App.css";
 
 class App extends Component {
@@ -14,7 +14,6 @@ class App extends Component {
   };
 
   componentDidMount() {
-    // TODO: make fetch call from another file and import data
     fetch("https://api.spacexdata.com/v3/launches")
       .then(responce => responce.json())
       .then(responceData =>
@@ -41,7 +40,6 @@ class App extends Component {
               />
               <Route
                 path="/mission/:name"
-                // Ref. for {...props} below
                 render={props => <Mission {...props} data={this.state.data} />}
               />
               <Route path="*" exact={true} component={NotFound} />
@@ -56,13 +54,3 @@ class App extends Component {
 }
 
 export default App;
-
-// https://stackoverflow.com/questions/46197178/cannot-read-property-params-of-undefined-react-router-4
-/**
- * with render you are not passing the default props passed by the router into component, like match, history etc.
-  When you write this:  <Mission key={this.props.location.key} />
-  It means no props value in Mission component.
-  Write it like this:
-  render = {props => <Mission {...props} key={this.props.location.key} /> } />
-  Now {...props} will pass all the value into Mission component.
- */

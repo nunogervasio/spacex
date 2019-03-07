@@ -1,13 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CardDetails from "./components/CardDetails";
-import utils from "./utils";
+import CardDetails from "../components/CardDetails/CardDetails";
+import utils from "../utils";
+import "./Mission.css";
 
 const Mission = ({ data, match }) => {
   // let name = propps.match.params.name;
   let name = match.params.name;
-
-  //TODO: function that filters out the '/' character of the url path
 
   let selectedMission = data.filter(d => {
     return utils.removeForwardSlash(d.mission_name) === name;
