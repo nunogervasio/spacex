@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import roverImg from "../../img/mars-rover.svg";
-import "./Header.css";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <header className="main-header">
+    <header>
       <Link to="/">
-        <div className="flex-wrapper">
-          <h1 className="name">SpaceX - API</h1>
-          <img src={roverImg} alt="mars rover" className="main-header-img" />
+        <div className={styles.flex_wrapper}>
+          <h1 className={styles.name}>SpaceX - API</h1>
+          <img src={roverImg} alt="mars rover" className={styles.header_img} />
         </div>
       </Link>
     </header>

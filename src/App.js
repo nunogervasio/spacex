@@ -5,8 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import Mission from "./Mission/Mission";
-import SiteDesc from "./components/SiteDesc/SiteDesc";
-import "./App.css";
+import styles from "./App.module.css";
 
 class App extends Component {
   state = {
@@ -28,10 +27,9 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="site-wrapper">
-          <div className="content-wrapper">
+        <div className={styles.site_wrapper}>
+          <div className={styles.content_wrapper}>
             <Header />
-            {/* <SiteDesc /> */}
             <Switch>
               <Route
                 exact

@@ -6,7 +6,6 @@
 @media (min-width: 576px) {
   .container {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     width: 90%;
     margin: 0 auto;

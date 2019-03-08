@@ -1,10 +1,10 @@
 /* Sticky Footer */
-.site-wrapper {
+.site_wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 /* Sticky Footer */
-.content-wrapper {
+.content_wrapper {
   flex-grow: 1;
 }

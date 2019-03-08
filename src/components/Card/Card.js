@@ -1,24 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import "./Card.css";
+import styles from "./Card.module.css";
 
-const Card = ({ patch_url, number, name, date, site }) => {
+const Card = ({ patch_url, name }) => {
   return (
     <Link to={`/mission/${name}`}>
-      <div className="main-card btn-2">
-        <div className="card-img ">
-          <img src={patch_url} className="patch" alt="mission patch" />
-          {/* <span className="flight-no ">{number}</span> */}
-        </div>
-        <div className="card-details">
-          <p>
-            {/* <span className="flight-name ">{name}</span> */}
-            {/* <br /> */}
-            {/* <span className="card-date-time">Date:</span> {date} */}
-            {/* <br /> */}
-            {/* <span className="card-location">Location:</span> {site} */}
-          </p>
+      <div className={styles.card}>
+        <div className={styles.img}>
+          <img src={patch_url} className={styles.patch} alt="mission patch" />
         </div>
       </div>
     </Link>
@@ -29,8 +19,5 @@ export default Card;
 
 Card.propTypes = {
   patch_url: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  site: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired
 };

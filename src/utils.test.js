@@ -14,8 +14,8 @@ describe("testing utilities Functions", () => {
      */
     // expect(utils.addLeadingZero("9")).to.equal("09");
   });
-  it("should return a number type", () => {
-    expect(utils.addLeadingZero(9)).to.be.a("number");
+  it("should return a string type", () => {
+    expect(utils.addLeadingZero(9)).to.be.a("string");
   });
   it("should return message if details is null", () => {
     expect(utils.isDetailsNull(null)).to.equal(

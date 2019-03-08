@@ -1,0 +1,16 @@
+.card {
+  margin: 0.3em;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img {
+  display: block;
+  text-align: center;
+}
+
+.patch {
+  width: 160px;
+}

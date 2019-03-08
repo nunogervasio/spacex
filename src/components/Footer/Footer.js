@@ -1,9 +1,9 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className="main-footer">
+    <footer>
       <span>&copy;2019 Unofficial SpaceX Website</span>
     </footer>
   );

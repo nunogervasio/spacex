@@ -1,0 +1,22 @@
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.links img {
+  max-height: 20px;
+  max-width: 20px;
+}
+/****** floated columns */
+.youtube,
+.wiki {
+  float: right;
+  margin-left: 5px;
+}
+
+.float_left {
+  width: 25%;
+  float: left;
+}

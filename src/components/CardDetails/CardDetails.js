@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import youtubeImg from "../../img/youtube-1.svg";
 import wikiImg from "../../img/wiki-1.svg";
-import "./CardDetails.css";
+import Patch from "../Patch/Patch";
+import Links from "../Links/Links";
+import styles from "./CardDetails.module.css";
 
 const CardDetails = ({
   patch_url,
@@ -16,44 +18,32 @@ const CardDetails = ({
   youtube_url,
   wiki_url
 }) => {
+  console.log({ name });
   return (
-    <div className="main-card-details">
-      <div className="card-img-details">
-        <img src={patch_url} className="patch-details" alt="mission patch" />
-      </div>
-
-      <div className="card-details-details">
+    <div className={styles.card}>
+      <Patch patch_url={patch_url} />
+      <div className={styles.details}>
         <p>
-          <span className="flight-name">{name}</span>
+          <span className={styles.flight_name}>{name}</span>
           <br />
-          <span className="card-location">Flight Number: </span> {number}
+          <strong>Flight Number:</strong> {number}
           <br />
-          <span className="card-date-time">Date:</span> {date}
+          <strong>Date:</strong> {date}
           <br />
-          <span className="card-location">Location:</span> {site}
+          <strong>Location:</strong> {site}
           <br />
-          <span className="card-location">Rocket Name:</span> {rocketName}
+          <strong>Rocket Name:</strong> {rocketName}
           <br />
-          <span className="card-location">Rocket Type:</span> {rocketType}
+          <strong>Rocket Type:</strong> {rocketType}
           <br />
-          <span className="card-location">Mission Details: </span> {details}
-          <br />
+          <strong>Mission Details:</strong> {details}
         </p>
-
-        <div className="links">
-          <div className="card-location clearfix">
-            <a href={youtube_url} target="_blank" rel="noopener noreferrer">
-              <img src={youtubeImg} alt="youtube icon" className="float-left" />
-              <span className="youtube">YouTube Video</span>
-            </a>
-          </div>
-          <div className="card-location clearfix">
-            <a href={wiki_url} target="_blank" rel="noopener noreferrer">
-              <img src={wikiImg} alt="wiki icon" className="float-left" />
-              <span className="wiki">Wikipedia Page</span>
-            </a>
-          </div>
-        </div>
+        <Links
+          youtube_url={youtube_url}
+          youtubeImg={youtubeImg}
+          wiki_url={wiki_url}
+          wikiImg={wikiImg}
+        />
       </div>
     </div>
   );

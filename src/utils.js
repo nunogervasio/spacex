@@ -16,7 +16,7 @@ function isDetailsNull(details) {
 }
 
 function removeForwardSlash(details) {
-  return details.replace(/\//i, "-");
+  return details.replace(/[\/]/g, "-");
 }
 
 // export default formatDate;

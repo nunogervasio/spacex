@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import CardDetails from "../components/CardDetails/CardDetails";
 import utils from "../utils";
-import "./Mission.css";
+import styles from "./Mission.module.css";
 
 const Mission = ({ data, match }) => {
   // let name = propps.match.params.name;
@@ -30,7 +30,7 @@ const Mission = ({ data, match }) => {
     );
   });
 
-  return <div className="container">{cards}</div>;
+  return <div className={styles.container}>{cards}</div>;
 };
 
 export default Mission;
