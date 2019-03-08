@@ -31,7 +31,7 @@ class App extends Component {
         <div className="site-wrapper">
           <div className="content-wrapper">
             <Header />
-            <SiteDesc />
+            {/* <SiteDesc /> */}
             <Switch>
               <Route
                 exact

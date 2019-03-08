@@ -19,7 +19,7 @@ const CardDetails = ({
   return (
     <div className="main-card-details">
       <div className="card-img-details">
-        <img src={patch_url} className="patch" alt="mission patch" />
+        <img src={patch_url} className="patch-details" alt="mission patch" />
       </div>
 
       <div className="card-details-details">
@@ -63,7 +63,7 @@ export default CardDetails;
 
 CardDetails.propTypes = {
   patch_url: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired,
+  number: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   site: PropTypes.string.isRequired,
