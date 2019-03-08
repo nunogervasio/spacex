@@ -6,7 +6,7 @@ import "./Card.css";
 const Card = ({ patch_url, number, name, date, site }) => {
   return (
     <Link to={`/mission/${name}`}>
-      <div className="main-card">
+      <div className="main-card btn-2">
         <div className="card-img ">
           <img src={patch_url} className="patch" alt="mission patch" />
           <span className="flight-no ">{number}</span>

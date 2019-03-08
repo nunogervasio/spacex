@@ -1,5 +1,5 @@
 .main-card {
-  border: solid black 2px;
+  /* border: solid black 2px; */
   padding-top: 16px;
   margin: 0.3em;
   width: 370px;
@@ -28,3 +28,4 @@
   vertical-align: baseline;
   line-height: 50%;
 }
+/* btn-2 ---------------------- */
