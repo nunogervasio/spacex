@@ -6,13 +6,6 @@
   display: flex;
   flex-direction: column;
 }
-.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 1em;
-  padding: 1em;
-}
 .details {
   display: flex;
   flex-direction: column;
@@ -20,28 +13,6 @@
   margin-left: 1em;
   padding: 0 0.3em;
 }
-
-.links img {
-  max-height: 20px;
-  max-width: 20px;
-}
-.flight_name {
-  font-size: 1.5em;
-  vertical-align: baseline;
-  line-height: 50%;
-}
-/****** floated columns */
-.youtube,
-.wiki {
-  float: right;
-  margin-left: 5px;
-}
-
-.float_left {
-  width: 25%;
-  float: left;
-}
-
 @media (min-width: 769px) {
   .card {
     flex-direction: row;

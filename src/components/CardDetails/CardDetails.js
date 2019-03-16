@@ -4,6 +4,7 @@ import youtubeImg from "../../img/youtube-1.svg";
 import wikiImg from "../../img/wiki-1.svg";
 import Patch from "../Patch/Patch";
 import Links from "../Links/Links";
+import MissionDetails from "../MissionDetails/MissionDetails";
 import styles from "./CardDetails.module.css";
 
 const CardDetails = ({
@@ -18,26 +19,19 @@ const CardDetails = ({
   youtube_url,
   wiki_url
 }) => {
-  console.log({ name });
   return (
     <div className={styles.card}>
       <Patch patch_url={patch_url} />
       <div className={styles.details}>
-        <p>
-          <span className={styles.flight_name}>{name}</span>
-          <br />
-          <strong>Flight Number:</strong> {number}
-          <br />
-          <strong>Date:</strong> {date}
-          <br />
-          <strong>Location:</strong> {site}
-          <br />
-          <strong>Rocket Name:</strong> {rocketName}
-          <br />
-          <strong>Rocket Type:</strong> {rocketType}
-          <br />
-          <strong>Mission Details:</strong> {details}
-        </p>
+        <MissionDetails
+          name={name}
+          number={number}
+          date={date}
+          site={site}
+          rocketName={rocketName}
+          rocketType={rocketType}
+          details={details}
+        />
         <Links
           youtube_url={youtube_url}
           youtubeImg={youtubeImg}
