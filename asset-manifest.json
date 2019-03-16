@@ -1,14 +1,17 @@
 {
-  "main.css": "/spacex/static/css/main.2fc098e5.chunk.css",
-  "main.js": "/spacex/static/js/main.c7202e9b.chunk.js",
-  "main.js.map": "/spacex/static/js/main.c7202e9b.chunk.js.map",
-  "static/js/1.59354776.chunk.js": "/spacex/static/js/1.59354776.chunk.js",
-  "static/js/1.59354776.chunk.js.map": "/spacex/static/js/1.59354776.chunk.js.map",
-  "runtime~main.js": "/spacex/static/js/runtime~main.83493456.js",
-  "runtime~main.js.map": "/spacex/static/js/runtime~main.83493456.js.map",
-  "static/media/mars-rover.svg": "/spacex/static/media/mars-rover.d0300d2b.svg",
-  "static/css/main.2fc098e5.chunk.css.map": "/spacex/static/css/main.2fc098e5.chunk.css.map",
+  "main.css": "/spacex/static/css/main.9468717f.chunk.css",
+  "main.js": "/spacex/static/js/main.b857ec9f.chunk.js",
+  "main.js.map": "/spacex/static/js/main.b857ec9f.chunk.js.map",
+  "runtime~main.js": "/spacex/static/js/runtime~main.bd600765.js",
+  "runtime~main.js.map": "/spacex/static/js/runtime~main.bd600765.js.map",
+  "static/js/2.7f483e9b.chunk.js": "/spacex/static/js/2.7f483e9b.chunk.js",
+  "static/js/2.7f483e9b.chunk.js.map": "/spacex/static/js/2.7f483e9b.chunk.js.map",
   "index.html": "/spacex/index.html",
-  "precache-manifest.d7ba6833fe9a77e2b05d89ab182d68ec.js": "/spacex/precache-manifest.d7ba6833fe9a77e2b05d89ab182d68ec.js",
-  "service-worker.js": "/spacex/service-worker.js"
+  "precache-manifest.ef649762e33ac43d24d4dce6084ac8df.js": "/spacex/precache-manifest.ef649762e33ac43d24d4dce6084ac8df.js",
+  "service-worker.js": "/spacex/service-worker.js",
+  "static/css/main.9468717f.chunk.css.map": "/spacex/static/css/main.9468717f.chunk.css.map",
+  "static/media/alien-with-aqualung.svg": "/spacex/static/media/alien-with-aqualung.b16524b9.svg",
+  "static/media/mars-rover.svg": "/spacex/static/media/mars-rover.d0300d2b.svg",
+  "static/media/wiki-1.svg": "/spacex/static/media/wiki-1.2f99f916.svg",
+  "static/media/youtube-1.svg": "/spacex/static/media/youtube-1.2c2eb485.svg"
 }
