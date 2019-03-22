@@ -1,4 +1,4 @@
-This project fetches data from the [SpaceX API](https://api.spacexdata.com/v2/launches) and dynamically displays mission information including each flights:
+This project fetches data from the [SpaceX API](https://api.spacexdata.com/v2/launches) and dynamically displays mission details including each flights:
 
 - Patch Image
 - Name
