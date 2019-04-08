@@ -1,15 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import CardDetails from "../components/CardDetails/CardDetails";
-import utils from "../utils";
+import {
+  addLeadingZero,
+  removeForwardSlash,
+  formatDate,
+  isDetailsNull
+} from "../utils";
 import styles from "./Mission.module.css";
 
 const Mission = ({ data, match }) => {
-  // let name = propps.match.params.name;
   let name = match.params.name;
 
   let selectedMission = data.filter(d => {
-    return utils.removeForwardSlash(d.mission_name) === name;
+    return removeForwardSlash(d.mission_name) === name;
   });
 
   let cards = selectedMission.map((element, index) => {
@@ -17,13 +21,13 @@ const Mission = ({ data, match }) => {
       <CardDetails
         key={index}
         patch_url={element.links.mission_patch_small}
-        number={utils.addLeadingZero(element.flight_number)}
-        name={utils.removeForwardSlash(element.mission_name)}
-        date={utils.formatDate(element.launch_date_local)}
+        number={addLeadingZero(element.flight_number)}
+        name={removeForwardSlash(element.mission_name)}
+        date={formatDate(element.launch_date_local)}
         site={element.launch_site.site_name_long}
         rocketName={element.rocket.rocket_name}
         rocketType={element.rocket.rocket_type}
-        details={utils.isDetailsNull(element.details)}
+        details={isDetailsNull(element.details)}
         youtube_url={element.links.video_link}
         wiki_url={element.links.wikipedia}
       />

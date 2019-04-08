@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Card from "../components/Card/Card";
-import utils from "../utils";
+import { removeForwardSlash } from "../utils";
 import styles from "./Home.module.css";
 
 const Home = ({ data }) => {
@@ -14,7 +14,7 @@ const Home = ({ data }) => {
       <Card
         key={index}
         patch_url={element.links.mission_patch_small}
-        name={utils.removeForwardSlash(element.mission_name)}
+        name={removeForwardSlash(element.mission_name)}
       />
     );
   });
