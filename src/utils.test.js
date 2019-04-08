@@ -1,28 +1,41 @@
-import utils from "./utils";
-import { expect } from "chai";
+import {
+  formatDate,
+  addLeadingZero,
+  isDetailsNull,
+  removeForwardSlash
+} from "./utils";
 
-describe("testing utilities Functions", () => {
+describe("formatDate", () => {
   it("should return only 9 numbers", () => {
-    expect(utils.formatDate("12345678910")).to.have.lengthOf(9);
+    expect(formatDate("12345678910")).toEqual("123456789");
+  });
+});
+
+describe("addLeadingZero", () => {
+  it("should return a string type", () => {
+    expect(addLeadingZero(9)).toEqual("09");
   });
   it("should add 1 leading zero to numbers less then 10", () => {
-    /**
-     * test passes but technically not correct.
-     * i'm passing a string when what i should be passing is a number
-     * when i pass a number i get ERROR:
-     * Legacy octal literals are not allowed in strict mode javascript
-     */
-    // expect(utils.addLeadingZero("9")).to.equal("09");
+    expect(addLeadingZero(9)).toEqual("09");
   });
-  it("should return a string type", () => {
-    expect(utils.addLeadingZero(9)).to.be.a("string");
+  it("should return a number > than 9", () => {
+    expect(addLeadingZero(10)).toEqual("10");
   });
+});
+
+describe("isDetailsNull", () => {
   it("should return message if details is null", () => {
-    expect(utils.isDetailsNull(null)).to.equal(
+    expect(isDetailsNull(null)).toEqual(
       `There are no details for this mission`
     );
   });
-  it("replace the '/' character with '-' from the mission name", () => {
-    expect(utils.removeForwardSlash("abc/abc")).to.equal("abc-abc");
+  it("should return mission details if not null", () => {
+    expect(isDetailsNull("mission details")).toEqual("mission details");
+  });
+});
+
+describe("removeForwardSlash", () => {
+  it("should replace the '/' character with '-' from the mission name", () => {
+    expect(removeForwardSlash("abc/abc")).toEqual("abc-abc");
   });
 });
