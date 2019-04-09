@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission Details renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MissionDetails
+    date=""
+    details=""
+    name=""
+    number=""
+    rocketName=""
+    rocketType=""
+    site=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="flight_name"
+        >
+          
+        </span>,
+        <br />,
+        <strong>
+          Flight Number:
+        </strong>,
+        " ",
+        "",
+        <br />,
+        <strong>
+          Date:
+        </strong>,
+        " ",
+        "",
+        <br />,
+        <strong>
+          Location:
+        </strong>,
+        " ",
+        "",
+        <br />,
+        <strong>
+          Rocket Name:
+        </strong>,
+        " ",
+        "",
+        <br />,
+        <strong>
+          Rocket Type:
+        </strong>,
+        " ",
+        "",
+        <br />,
+        <strong>
+          Mission Details:
+        </strong>,
+        " ",
+        "",
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "",
+          "className": "flight_name",
+        },
+        "ref": null,
+        "rendered": "",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Flight Number:",
+        },
+        "ref": null,
+        "rendered": "Flight Number:",
+        "type": "strong",
+      },
+      " ",
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Date:",
+        },
+        "ref": null,
+        "rendered": "Date:",
+        "type": "strong",
+      },
+      " ",
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Location:",
+        },
+        "ref": null,
+        "rendered": "Location:",
+        "type": "strong",
+      },
+      " ",
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Rocket Name:",
+        },
+        "ref": null,
+        "rendered": "Rocket Name:",
+        "type": "strong",
+      },
+      " ",
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Rocket Type:",
+        },
+        "ref": null,
+        "rendered": "Rocket Type:",
+        "type": "strong",
+      },
+      " ",
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Mission Details:",
+        },
+        "ref": null,
+        "rendered": "Mission Details:",
+        "type": "strong",
+      },
+      " ",
+      "",
+    ],
+    "type": "p",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="flight_name"
+          >
+            
+          </span>,
+          <br />,
+          <strong>
+            Flight Number:
+          </strong>,
+          " ",
+          "",
+          <br />,
+          <strong>
+            Date:
+          </strong>,
+          " ",
+          "",
+          <br />,
+          <strong>
+            Location:
+          </strong>,
+          " ",
+          "",
+          <br />,
+          <strong>
+            Rocket Name:
+          </strong>,
+          " ",
+          "",
+          <br />,
+          <strong>
+            Rocket Type:
+          </strong>,
+          " ",
+          "",
+          <br />,
+          <strong>
+            Mission Details:
+          </strong>,
+          " ",
+          "",
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+            "className": "flight_name",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Flight Number:",
+          },
+          "ref": null,
+          "rendered": "Flight Number:",
+          "type": "strong",
+        },
+        " ",
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Date:",
+          },
+          "ref": null,
+          "rendered": "Date:",
+          "type": "strong",
+        },
+        " ",
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Location:",
+          },
+          "ref": null,
+          "rendered": "Location:",
+          "type": "strong",
+        },
+        " ",
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Rocket Name:",
+          },
+          "ref": null,
+          "rendered": "Rocket Name:",
+          "type": "strong",
+        },
+        " ",
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Rocket Type:",
+          },
+          "ref": null,
+          "rendered": "Rocket Type:",
+          "type": "strong",
+        },
+        " ",
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Mission Details:",
+          },
+          "ref": null,
+          "rendered": "Mission Details:",
+          "type": "strong",
+        },
+        " ",
+        "",
+      ],
+      "type": "p",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
