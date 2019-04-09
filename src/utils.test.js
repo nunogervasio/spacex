@@ -6,8 +6,11 @@ import {
 } from "./utils";
 
 describe("formatDate", () => {
-  it("should return only 9 numbers", () => {
-    expect(formatDate("12345678910")).toEqual("123456789");
+  it("should return data", () => {
+    expect(formatDate("2006-03-25T10:30:00+12:00")).toBeDefined();
+  });
+  it("should a formated date", () => {
+    expect(formatDate("2006-03-25T10:30:00+12:00")).toEqual("24 Mar 2006");
   });
 });
 
@@ -18,7 +21,7 @@ describe("addLeadingZero", () => {
   it("should add 1 leading zero to numbers less then 10", () => {
     expect(addLeadingZero(9)).toEqual("09");
   });
-  it("should return a number > than 9", () => {
+  it("should return a number when > than 9", () => {
     expect(addLeadingZero(10)).toEqual("10");
   });
 });
