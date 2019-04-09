@@ -13,11 +13,12 @@ const Mission = ({ data, match }) => {
   let name = match.params.name;
 
   let selectedMission = data.filter(d => {
-    return removeForwardSlash(d.mission_name) === name;
+    return removeForwardSlash(d.mission_name) === name; //TEST
   });
 
   let cards = selectedMission.map((element, index) => {
     return (
+      //TEST
       <CardDetails
         key={index}
         patch_url={element.links.mission_patch_small}

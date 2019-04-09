@@ -6,11 +6,11 @@ import styles from "./Home.module.css";
 
 const Home = ({ data }) => {
   let filteredData = data.filter(d => {
-    return d.upcoming === false;
+    return d.upcoming === false; //TEST
   });
-
   let cards = filteredData.map((element, index) => {
     return (
+      //TEST
       <Card
         key={index}
         patch_url={element.links.mission_patch_small}
@@ -18,7 +18,6 @@ const Home = ({ data }) => {
       />
     );
   });
-
   return <div className={styles.container}>{cards}</div>;
 };
 

@@ -1,3 +1,4 @@
+import "jest-extended";
 import {
   formatDate,
   addLeadingZero,
@@ -6,17 +7,19 @@ import {
 } from "./utils";
 
 describe("formatDate", () => {
+  const date = "2006-03-25T10:30:00+12:00";
+
   it("should return data", () => {
-    expect(formatDate("2006-03-25T10:30:00+12:00")).toBeDefined();
+    expect(formatDate(date)).toBeDefined();
   });
   it("should a formated date", () => {
-    expect(formatDate("2006-03-25T10:30:00+12:00")).toEqual("24 Mar 2006");
+    expect(formatDate(date)).toEqual("24 Mar 2006");
   });
 });
 
 describe("addLeadingZero", () => {
   it("should return a string type", () => {
-    expect(addLeadingZero(9)).toEqual("09");
+    expect(addLeadingZero(9)).toBeString();
   });
   it("should add 1 leading zero to numbers less then 10", () => {
     expect(addLeadingZero(9)).toEqual("09");

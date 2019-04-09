@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NotFound />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Page Cannot Be Found
+        </h1>,
+        <p
+          className="space-font"
+        >
+          Only...
+        </p>,
+        <img
+          alt="space monster"
+          className="monster"
+          src="alien-with-aqualung.svg"
+        />,
+        <h2>
+          Space Monster!
+        </h2>,
+      ],
+      "className": "not-found",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Page Cannot Be Found",
+        },
+        "ref": null,
+        "rendered": "Page Cannot Be Found",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Only...",
+          "className": "space-font",
+        },
+        "ref": null,
+        "rendered": "Only...",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "space monster",
+          "className": "monster",
+          "src": "alien-with-aqualung.svg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Space Monster!",
+        },
+        "ref": null,
+        "rendered": "Space Monster!",
+        "type": "h2",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Page Cannot Be Found
+          </h1>,
+          <p
+            className="space-font"
+          >
+            Only...
+          </p>,
+          <img
+            alt="space monster"
+            className="monster"
+            src="alien-with-aqualung.svg"
+          />,
+          <h2>
+            Space Monster!
+          </h2>,
+        ],
+        "className": "not-found",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Page Cannot Be Found",
+          },
+          "ref": null,
+          "rendered": "Page Cannot Be Found",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Only...",
+            "className": "space-font",
+          },
+          "ref": null,
+          "rendered": "Only...",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "space monster",
+            "className": "monster",
+            "src": "alien-with-aqualung.svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Space Monster!",
+          },
+          "ref": null,
+          "rendered": "Space Monster!",
+          "type": "h2",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

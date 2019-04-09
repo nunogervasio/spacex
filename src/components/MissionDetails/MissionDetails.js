@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./MissionDetails.module.css";
 
 const MissionDetails = ({
@@ -30,3 +31,13 @@ const MissionDetails = ({
 };
 
 export default MissionDetails;
+
+MissionDetails.propTypes = {
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  site: PropTypes.string.isRequired,
+  rocketName: PropTypes.string.isRequired,
+  rocketType: PropTypes.string.isRequired,
+  details: PropTypes.string.isRequired
+};
