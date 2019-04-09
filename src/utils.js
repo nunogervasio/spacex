@@ -1,7 +1,7 @@
-// TODO: use date-fns to return a more readable date
+import { format } from "date-fns";
 
 export function formatDate(date) {
-  return date.slice(0, 9);
+  return format(new Date(date), "DD MMM YYYY");
 }
 
 export function addLeadingZero(number) {

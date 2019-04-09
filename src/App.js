@@ -41,7 +41,6 @@ class App extends Component {
                 render={props => <Mission {...props} data={this.state.data} />}
               />
               <Route path="*" exact={true} component={NotFound} />
-              {/* <Route path="*" exact={true} component={NotFound} /> */}
             </Switch>
           </div>
           <Footer />
